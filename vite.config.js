@@ -11,12 +11,12 @@ export default defineConfig({
     },
   },
   server: {
-    proxy: {
-      '/api': {
-        target: 'https://rateengine.ship.cars',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
+    // proxy: {
+    //   '/api': {
+    //     target: 'https://rateengine.ship.cars',
+    //     changeOrigin: true,
+    //     rewrite: (path) => path.replace(/^\/api/, ''),
+    //   },
+    // },
   },
 })

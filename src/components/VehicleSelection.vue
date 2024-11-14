@@ -25,7 +25,7 @@ export default {
     async fetchYears() {
       try {
         const response = await axios.get(
-          `/api/v2/vehicles/years/?token=5cbe12fb62f4941267d623499a2a4fd5948fd3ef`,
+          `https://rateengine.ship.cars/v2/vehicles/years/?token=5cbe12fb62f4941267d623499a2a4fd5948fd3ef`,
           {
             headers: {
               Accept: 'application/json',
@@ -44,7 +44,7 @@ export default {
       this.loadingMakes = true
       try {
         const response = await axios.get(
-          `/api/v2/vehicles/makes/?year=${this.selectedYear}&token=5cbe12fb62f4941267d623499a2a4fd5948fd3ef`,
+          `https://rateengine.ship.cars/v2/vehicles/makes/?year=${this.selectedYear}&token=5cbe12fb62f4941267d623499a2a4fd5948fd3ef`,
           {
             headers: {
               Accept: 'application/json',
@@ -69,7 +69,7 @@ export default {
       this.loadingModels = true
       try {
         const response = await axios.get(
-          `/api/v2/vehicles/models/?year=${this.selectedYear}&make=${this.selectedMake}&token=5cbe12fb62f4941267d623499a2a4fd5948fd3ef`,
+          `https://rateengine.ship.cars/v2/vehicles/models/?year=${this.selectedYear}&make=${this.selectedMake}&token=5cbe12fb62f4941267d623499a2a4fd5948fd3ef`,
           {
             headers: {
               Accept: 'application/json',
